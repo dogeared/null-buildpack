@@ -1,3 +1,10 @@
 #!/usr/bin/env bash
+# bin/release <build-dir>
 
-echo "--- {}"
+BUILD_DIR=$1
+
+cat <<EOF
+---
+config_vars:
+  JAVA_OPTS: -XX:+UseCompressedOops
+EOF
